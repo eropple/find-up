@@ -1,0 +1,43 @@
+{
+  "name": "@eropple/find-up",
+  "version": "0.1.0",
+  "description": "Recursively searches upward to find files/directories in parent paths.",
+  "main": "dist",
+  "author": "Ed Ropple",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eropple/find-up"
+  },
+  "private": false,
+  "scripts": {
+    "build": "yarn exec -- tsc",
+    "watch": "yarn build --watch",
+    "prepare": "yarn build",
+    "test": "jest",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^10.12.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "5.16.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {},
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
